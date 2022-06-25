@@ -23,7 +23,7 @@ class Productos{
             elemento.id = producto.nombre;
             elemento.innerHTML = 
             `
-                <img src="../images/botre6.jpeg" alt="Imagen coleccion 2" class="img-fluid" id="colecImg">
+                <img src="images/botre6.jpeg" alt="Imagen coleccion 2" class="img-fluid" id="colecImg">
                 <p  class="mt-4">  ${producto.nombre} </p>
                 <button type="submit" class="btn btn-scheme-a btnproduct" id="product2">Consultar stock</button>
             `
@@ -46,7 +46,7 @@ class Productos{
         elemento.id = producto.nombre;
         elemento.innerHTML = 
         `
-            <img src="../images/botre6.jpeg" alt="Imagen coleccion 2" class="img-fluid" id="colecImg">
+            <img src="images/botre6.jpeg" alt="Imagen coleccion 2" class="img-fluid" id="colecImg">
             <p  class="mt-4">  ${producto.nombre} </p>
             <button type="submit" class="btn btn-scheme-a btnproduct" id="product2">Consultar stock</button>
         `
