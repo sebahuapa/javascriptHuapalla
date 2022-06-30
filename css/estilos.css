@@ -19,7 +19,10 @@ main{
     background-color: black;
     border-radius: 50px;
 } */
-#btnTrash{
+#carrito{
+  background-color: grey;
+}
+#btnTrash, #btnTrashCarrito{
   border-radius: 5px;
   background-image: url(../images/basura.png);
   background-repeat: no-repeat;
