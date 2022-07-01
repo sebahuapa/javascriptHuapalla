@@ -61,10 +61,16 @@ class Productos{
             <img src="images/botre6.jpeg" alt="Imagen coleccion 2" class="img-fluid" id="colecImg">
             <p  class="mt-4">  ${producto.nombre}</p>
         `
-        const btnCarrito = document.createElement('button')
+        const btnCarrito = document.createElement('input')
         btnCarrito.className = "btn btn-scheme-a btnproduct";
         btnCarrito.id = "btnCarrito"
+        btnCarrito.type = "button"
         btnCarrito.textContent = "Agregar al carrito"
+        btnCarrito.onclick = () => {
+            listaCarrito.agregarProductosCarrito(producto)
+            listaCarrito.listaProductosHtml(producto)
+            console.log(listaCarrito)
+        }
         const button = document.createElement('button')
         button.className = "btn btn-scheme-a";
         button.id = "btnTrash"
