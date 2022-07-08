@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/estilos.css">
+    <script src="sweetalert2.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="sweetalert2.min.css">
     <title>BOTRE | Tienda de camisas, remeras y accesorios</title>
     <meta name="description" content="Encuentra en esta pagina lo que buscas al mejor precio y calidad. Camisas y/o remeras en una sola página. Envios a todo el pais">
     <meta name="keywords" content="Camisas lisas, camisas estampadas, remeras lisas, remeras estampadas, remeras masculinas, remeras para hombre, camisas masculinas, camisas para hombres">
@@ -32,19 +35,69 @@
     </header>
     <main style="text-align: center">
         <form  id="addProduct">
-            <input type="text" placeholder="Nombre" required>
-            <!-- <input type="text" placeholder="Tipo"> -->
-            <input type="number" placeholder="Precio" required>
-            <button type="submit" class="btn btn-scheme-a" id="btn">AGREGAR PRODUCTO</button> <!-- BOTON INGRESAR -->
+            <input type="text" placeholder="Nombre" id="nombre" required>
+            <input type="number" placeholder="Precio" id="precio" required>
+            <button type="submit" class="btn btn-scheme-a" id="btn">AGREGAR PRODUCTO</button><!-- BOTON PARA AGREGAR PRODUCTO -->
         </form>
         <div class="container-fluid text-center">
             <div class="row p-3 justify-content-evenly" id="contenedor"> <!-- MI CONTENEDOR -->
                 <!-- ACA SE VAN AGREGANDO MIS PRODUCTOS -->
             </div>
         </div>
+        <!-- DIV CARRITO -->
         <div class="container-fluid text-center">
             <div class="row p-3 justify-content-evenly" id="carrito">
                 <h1>Carrito de compras</h1>
+            </div>
+        </div>
+
+        <div class="container-fluid text-center newProduct">
+            <div class="row p-3 justify-content-evenly" id="newProduct">
+                <div class="col-12 col-md-7 col-lg-1">
+                    <p>Categoria:</p>
+                    <select name="producto_categoria" id="categoriaP">
+                        <option value="" id="camisa">Camisa</option>
+                        <option value="" id="remera">Remera</option>
+                        <option value="" id="cinturon">Cinturon</option>
+                        <option value="" id="billetera">Billetera</option>
+                    </select>
+                </div>
+                <div class="col-12 col-md-7 col-lg-1">
+                    <p>Tipo:</p>
+                    <select name="producto_tipo" id="tipoP">
+                        <option value="" id="mangaLarga">Manga larga</option>
+                        <option value="" id="mangaCorta">Manga corta</option>
+                    </select>
+                </div>
+                <div class="col-12 col-md-7 col-lg-1">
+                    <p>Molderia:</p>
+                    <select name="producto_molderia" id="molderiaP">
+                        <option value="" id="regular">Regular</option>
+                        <option value="" id="slimfit">SlimFit</option>
+                    </select>
+                </div>
+                <div class="col-12 col-md-7 col-lg-1">
+                    <p>Genero:</p>
+                    <select name="producto_genero" id="generoP">
+                        <option value="" id="masc">Masculino</option>
+                        <option value="" id="femn">Femenino</option>
+                    </select>
+                </div>
+                <div class="col-12 col-md-7 col-lg-1">
+                    <p>Estilo:</p>
+                    <select name="producto_estilo" id="estiloP">
+                        <option value="" id="lisa">Lisa</option>
+                        <option value="" id="cuadros">A cuadros</option>
+                        <option value="" id="estampada">Estampada</option>
+                    </select>
+                </div>
+                <div class="col-12 col-md-7 col-lg-1">
+                    <p>Precio:</p>
+                    <input type="number" id="precioP" required>
+                </div>
+                <div class="col-12 col-md-7 col-lg-3 asd">
+                    <button type="button" id="addProducto" required>Agregar producto</button>
+                </div>
             </div>
         </div>
     </main>

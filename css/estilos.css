@@ -19,6 +19,19 @@ main{
     background-color: black;
     border-radius: 50px;
 } */
+.asd{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.newProduct{
+  background-color:mediumslateblue;
+  padding: 5px;
+  border-radius: 5px;
+  width: 150vh;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
 #carrito{
   background-color: grey;
 }
